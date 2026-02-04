@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JEE Practice Hub</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand__logo">📘</span>
+        <div>
+          <p class="brand__title">JEE Practice Hub</p>
+          <p class="brand__subtitle">11th &amp; 12th Physics, Maths, Chemistry • PYQs • Chapter-wise</p>
+        </div>
+      </div>
+      <button class="google-login" type="button">
+        <span class="google-login__icon">G</span>
+        <span>Continue with Google</span>
+      </button>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <div>
+          <h1>Prepare faster with organized JEE practice</h1>
+          <p>
+            Choose your class, subject, and chapter to jump straight into curated PYQs and
+            practice sets. Save time and stay focused.
+          </p>
+          <div class="hero__actions">
+            <button class="primary" type="button">Start Quick Test</button>
+            <button class="ghost" type="button">Browse Chapters</button>
+          </div>
+        </div>
+        <div class="hero__card">
+          <h2>Today’s Sprint</h2>
+          <ul>
+            <li>⚡ 15 min PYQ Mix</li>
+            <li>🧠 Chapter: Electrostatics</li>
+            <li>🧪 Concept Booster: Chemical Bonding</li>
+          </ul>
+          <button class="primary" type="button">Resume</button>
+        </div>
+      </section>
+
+      <section class="filters">
+        <div class="filter-group">
+          <label for="class-select">Class</label>
+          <select id="class-select">
+            <option value="all">All</option>
+            <option value="11">11th</option>
+            <option value="12">12th</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="subject-select">Subject</label>
+          <select id="subject-select">
+            <option value="all">All</option>
+            <option value="Physics">Physics</option>
+            <option value="Maths">Maths</option>
+            <option value="Chemistry">Chemistry</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="mode-select">Mode</label>
+          <select id="mode-select">
+            <option value="all">All</option>
+            <option value="PYQ">PYQ</option>
+            <option value="Chapter-wise">Chapter-wise</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="search">Search chapter</label>
+          <input id="search" type="search" placeholder="e.g. Calculus" />
+        </div>
+      </section>
+
+      <section>
+        <div class="section-header">
+          <h2>Practice sets</h2>
+          <p>Pick a pack and start solving immediately.</p>
+        </div>
+        <div id="card-grid" class="card-grid"></div>
+      </section>
+
+      <section class="features">
+        <div>
+          <h3>Smart filters</h3>
+          <p>Slice by class, subject, and chapter in seconds.</p>
+        </div>
+        <div>
+          <h3>Real PYQs</h3>
+          <p>Direct access to previous year JEE questions.</p>
+        </div>
+        <div>
+          <h3>Chapter boosts</h3>
+          <p>Focused practice for every chapter you need.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Build your streak: 10 questions a day.</p>
+      <p class="muted">Google login is a UI placeholder. Connect your OAuth client for live sign-in.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
